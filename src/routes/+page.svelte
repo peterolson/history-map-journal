@@ -1,2 +1,9 @@
-<h1>Hello world!</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+	import TimeRange from '$lib/TimeRange.svelte';
+	import { yearState } from '$lib/state.svelte';
+</script>
+
+<TimeRange />
+
+<p>Start year: {yearState.start}</p>
+<p>End year: {yearState.end}</p>
